@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-comments',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    JsonPipe,
+  ],
   templateUrl: './comments.component.html',
   styleUrls: ['./comments.component.scss'],
 })
